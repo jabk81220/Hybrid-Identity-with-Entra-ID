@@ -42,7 +42,7 @@ In this task, you will create a Log Analytics workspace for to store the log inf
     > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps
     > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
     > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-    > - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
+    > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
     <validation step="10e645b5-8801-42ea-9684-ad923dfe3099" />
 
@@ -82,7 +82,7 @@ In this task, you will create a Log Analytics workspace for to store the log inf
       ```
        SigninLogs
       ```
-    ![](../media/lab4-6upd.png)
+    ![](../media/lab4-6.png)
 
 ## Review
 
@@ -92,5 +92,4 @@ In this lab , you have completed:
 - Added diagnostic settings to collect audit logs from resources.  
 - Verified the collected logs in the Log Analytics Workspace.
 
-## You have successfully completed the lab. Click on Next >> to procced with next exercise.
-   ![](../media/up4.png)
+## You have successfully completed the lab.

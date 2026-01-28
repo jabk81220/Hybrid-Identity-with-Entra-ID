@@ -260,5 +260,4 @@ In this lab, you have completed:
 - Enable Guest Users to perform self service sign-up
 - Configure external collaboration settings
 
-## You have successfully completed the lab. Click on Next >> to procced with next exercise.
-   ![](../media/up4.png)
+## You have successfully completed the lab.

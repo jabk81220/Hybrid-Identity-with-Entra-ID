@@ -225,5 +225,4 @@ In this task, you will verify the synchronization of identities in Microsoft Ent
 - Configure Microsoft Entra Connect for synchronization with Azure Active Directory.  
 - Verify successful synchronization of users and groups in Microsoft Entra.
 
-## You have successfully completed the lab. Click on Next >> to procced with next exercise.
-   ![](../media/up4.png)
+## You have successfully completed the lab.

@@ -269,4 +269,4 @@ In this lab, you have completed:
 - Configure conditional access with MFA
 - Validate and Remove conditional access MFA
 
- ## You have successfully completed the lab. Click on Next >> to procced with next exercise.
+ ## You have successfully completed the lab.

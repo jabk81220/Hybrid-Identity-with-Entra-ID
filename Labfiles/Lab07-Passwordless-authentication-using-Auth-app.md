@@ -1,4 +1,4 @@
-## Lab 06 - Configuring passwordless sign-in using an authentication app (Read-Only)
+# Lab 06 - Configuring passwordless sign-in using an authentication app (Read-Only)
 
 ### Estimated Duration: 15 Minutes
 
