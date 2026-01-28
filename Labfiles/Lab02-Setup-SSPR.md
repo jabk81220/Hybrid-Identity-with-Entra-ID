@@ -9,59 +9,10 @@ This lab focuses on configuring Entra Connect with password writeback, updating 
 ## Objectives
 
 In this lab, you will perform the following:
-- Task 1: Configure password writeback and Password minimum age policy. 
-- Task 2: Enable self-service password reset
-- Task 3: Validate self-service password reset
+- Task 1: Enable self-service password reset
+- Task 2: Validate self-service password reset
 
-### Task 1: Configure password writeback and Password minimum age policy. 
-
-1. Select the **Azure AD Connect** application from the desktop
-
-3. On the **Welcome to Entra Connect Sync** page, select **Configure**.
-
-   ![](../media/lab2-1upd.png)
-
-4. On the **Additional tasks** page, select **Customize synchronization options**, and then select **Next**.
-
-   ![](../media/lab2-2upd.png)
-
-1. On the **Connect to Entra ID** page, type **<inject key="AzureAdUserEmail"></inject>** in the **USERNAME** text box and then select **Next**.
-
-   ![](../media/lab2-3upd.png)
-
-1. Select the ODL User and enter the Temporary Access Pass  **<inject key="AzureAdUserPassword"></inject>**
-
-6. On the **Connect to your directories** page, select **Next**.
-
-   ![](../media/lab2-4upd.png)
-
-7. On the **Domain and OU filtering** page, select **Next**.
-
-8. On the **Optional features** page, select **Password writeback**, and then select **Next**.
-
-    ![](../media/lab2-5upd.png)
-
-9. On the **Ready to configure** page, select **Configure**.
-
-    ![](../media/lab2-6upd.png)
-
-10. On the **Configuration complete** page, select **Exit**.
-
-    ![](../media/lab2-7upd.png)
-
-11. Open CMD and run the below command to update the minimum password age policy to 0.
-
-      ```
-        secedit /configure /cfg %windir%\inf\defltbase.inf /db defltbase.sdb /verbose
-      ```
-
-13. Once updated, **Restart** the **LabVM** and verify if the policy is updated. Navigate to Local security policy -> expand Security Settings -> Account Policies -> Password Policy. The Minimum Password Age should be set to 0.
-
-    ![](../media/lab2-9a.png)
-
-    ![](../media/lab2-9upd.png)
-
-### Task 2: Enable self-service password reset
+### Task 1: Enable self-service password reset
 
 1. On the taskbar select **Microsoft Edge**, in the address bar type **https://entra.microsoft.com/**, and then press **Enter**.
 
@@ -109,7 +60,7 @@ In this lab, you will perform the following:
 
 15. Close Microsoft Edge.
 
-### Task 3: Validate self-service password reset
+### Task 2: Validate self-service password reset
 
 1. On the taskbar, select **Microsoft Edge**.
 
