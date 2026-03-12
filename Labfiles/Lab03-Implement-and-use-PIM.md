@@ -14,7 +14,7 @@ In this lab, you will perform the following:
 
 ### Task 1 - Assign Azure resource roles
 
-1. Open a browser tab and sign in to Microsoft Entra Admin center using your lab credentials. 
+1. Open a browser tab and sign in to Microsoft Entra Admin Center using your lab credentials. 
 
     ```
     https://entra.microsoft.com
@@ -27,7 +27,7 @@ In this lab, you will perform the following:
 
     ![](../media/L3T1S2.1-0903.png)
 
-3. In the Privileged Identity Management page, in the left navigation, select **Micrososft Entra roles.**
+3. In the Privileged Identity Management page, in the left navigation, select **Microsoft Entra roles.**
 
     ![](../media/lab3-1.png)
 
@@ -43,7 +43,7 @@ In this lab, you will perform the following:
 
 7. Under **Select member(s),** select **No member selected**.
 
-8. In the Select members pane, select the following users **(3)** and then chose **Select (4)**.
+8. In the Select members pane, select the following users **(3)** and then choose **Select (4)**.
 
     | Name           | 
       | -------------- | 
@@ -58,7 +58,7 @@ In this lab, you will perform the following:
 
 10. On the **Settings** tab, under **Assignment type**, select **Eligible (1)**.
 
-   - **Eligible** assignments require the member of the role to perform an action to use the role. Actions might include performing a multi-factor authentication (MFA) check, providing a business justification, or requesting approval from designated approvers.
+   - **Eligible** assignments require the member of the role to act to use the role. Actions might include performing a multi-factor authentication (MFA) check, providing a business justification, or requesting approval from designated approvers.
 
    - **Active** assignments do not require the member to perform any action to use the role. Members assigned as active have the privileges always assigned to the role.
 
@@ -88,13 +88,13 @@ In this task, you will update and remove an existing Entra role assignment as ne
 
     ![](../media/lab3-6.png)
 
-1. In order to make the eligible assignment to active for any user, select **Update** from Action list.
+1. To make the eligible assignment to active for any user, select **Update** from the Action list.
 
 1. Provide the below details in **Membership settings** and click on **Save (5)**
 
      - Assignment type : **Active (1)**
-     - Permanently eligible : **Uncheck the box (2)**
-     - Assignment ends : Enter the next date **(3)**
+     - Permanently eligible: **Uncheck the box (2)**
+     - Assignment ends: Enter the next date **(3)**
      - Enter Justification : **Test (4)**
   
        ![](../media/L3T2S7.1-0903.png)
@@ -103,6 +103,6 @@ In this task, you will update and remove an existing Entra role assignment as ne
 
 In this lab, you have successfully assigned Azure resource roles with Privileged Identity Management using time-bound, eligible assignments with approval workflows. You have also updated and removed an existing Entra role assignment as needed.
 
-#### You have successfully completed the lab. Click on Next >> to procced with next exercise.
+#### You have successfully completed the lab. Click on Next >> to proceed with the next lab.
 
    ![](../media/up4.png)
