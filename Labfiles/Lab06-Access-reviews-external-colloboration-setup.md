@@ -251,10 +251,10 @@ Screen image displaying guest user access restriction options
     >**IMPORTANT**
 
       - You can create either an allow list or a deny list. You can’t set up both types of lists. By default, whatever domains are not in the allow list are on the deny list, and vice versa.
-      - You can create only one policy per organization. You can update the policy to include more domains, or you can delete the policy to create a new one.
+      - You can create only one policy per organisation. You can update the policy to include more domains, or you can delete the policy to create a new one.
       - The number of domains you can add to an allow list or deny list is limited only by the size of the policy. The maximum size of the entire policy is 25 KB (25,000 characters), which includes the allow list or deny list and any other parameters configured for other features.
       - This list works independently from OneDrive for Business and SharePoint Online allow/block lists. If you want to restrict individual file sharing in SharePoint Online, you need to set up an allow or deny list for OneDrive for Business and SharePoint Online.
-      - The list does not apply to external users who have already redeemed the invitation. The list will be enforced after the list is set up. If a user invitation is in a pending state, and you set a policy that blocks their domain, the user’s attempt to redeem the invitation will fail.
+      - The list does not apply to external users who have already redeemed the invitation. The list will be enforced after it is set up. If a user invitation is pending, and you set a policy that blocks their domain, the user’s attempt to redeem the invitation will fail.
 
         ![](../media/new1-5-11.png)
 
@@ -262,6 +262,13 @@ Screen image displaying guest user access restriction options
 
 ## Summary
 
-In this lab, you have successfully configured access reviews to manage user permissions for Teams and Groups, and set up external collaboration settings to control guest user access and invitations in Microsoft Entra ID. These configurations help enhance security and ensure proper access management within your organization.
+In this lab, you have successfully configured access reviews to manage user permissions for Teams and Groups, and set up external collaboration settings to control guest user access and invitations in Microsoft Entra ID. These configurations help enhance security and ensure proper access management within your organisation.
 
 ### You have successfully completed the lab.
+
+By completing this **Hybrid Identity with Entra ID** hands-on lab, you have gained practical experience in designing and implementing a **Hybrid Identity solution using Microsoft Entra ID and Active Directory Domain Services**. You successfully configured identity synchronisation between on-premises and cloud environments using **Microsoft Entra Connect**, enabled **self-service password reset with password writeback**, and implemented **Privileged Identity Management (PIM)** for controlled and time-bound administrative access.
+
+You also explored **identity governance and security monitoring** by configuring **access reviews, external collaboration settings, and Azure Monitor with Log Analytics** to track audit and sign-in activities. These configurations help ensure secure access management, visibility into identity-related events, and compliance with organisational security policies.
+
+Overall, this lab provided a comprehensive understanding of how organisations can securely manage identities across **hybrid environments**, enforce **least-privilege access**, and implement **modern identity governance and monitoring capabilities** using Microsoft Entra ID.
+
