@@ -264,5 +264,4 @@ Screen image displaying guest user access restriction options
 
 In this lab, you have successfully configured access reviews to manage user permissions for Teams and Groups, and set up external collaboration settings to control guest user access and invitations in Microsoft Entra ID. These configurations help enhance security and ensure proper access management within your organization.
 
-#### You have successfully completed the lab. Click on Next >> to procced with next exercise.
-   ![](../media/up4.png)
+### You have successfully completed the lab.
