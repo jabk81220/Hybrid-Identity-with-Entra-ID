@@ -79,7 +79,7 @@ In this task, you will enable self-service password reset for users in your tena
 
 2. If prompted, sign in as  **<inject key="AzureAdUserEmail"></inject>**, and use the Temporary Access Pass as **<inject key="AzureAdUserPassword"></inject>**, If the **Stay signed in?** prompt appears, select **No**.  
 
-3. In the Microsoft Entra admin center, Navigate to the Search Resources section of the site.
+3. In the Microsoft Entra admin center, navigate to the Search Resources section of the site.
 
 4. In the search box, type **password reset (1)**, and then select **Password reset (2)**.
 
@@ -95,7 +95,7 @@ In this task, you will enable self-service password reset for users in your tena
 
 8. For the **Number of questions required to register (4)**, select **3**.
 
-9. For the **Number of questions required to reset (5)**, select **3**. An click on select **No security questions configured (6)**.
+9. For the **Number of questions required to reset (5)**, select **3**. Click on select **No security questions configured (6)**.
 
     ![](../media/L2T2S9-0903.png)
 
@@ -113,7 +113,7 @@ In this task, you will enable self-service password reset for users in your tena
 
 13. In the left navigation pane, select **On-premises integration (1)**.
 
-14. Verify that your on-premises writeback client is running and Select the checkbox for **Write back passwords with Microsoft Entra Connect cloud sync (2)** and then click **Save (3)**.
+14. Verify that your on-premises writeback client is running and select the checkbox for **Write back passwords with Microsoft Entra Connect cloud sync (2)** and then click **Save (3)**.
 
     ![](../media/L2T2S14-0903.png)
 
@@ -151,7 +151,7 @@ In this task, you will enable self-service password reset for users in your tena
 
 ## Summary
 
-In this lab, you have configured self-service password reset for user accounts in Entra ID. You enabled password writeback using Microsoft Entra Connect, updated the minimum password age policy to allow immediate password changes, and configured self-service password reset options including authentication methods and registration requirements. Finally, you validated the self-service password reset process by successfully changing a user's password through the My Account page. This setup empowers users to manage their passwords securely and reduces the administrative overhead of password resets.
+In this lab, you have configured self-service password reset for user accounts in Entra ID. You enabled password writeback using Microsoft Entra Connect, updated the minimum password age policy to allow immediate password changes, and configured self-service password reset options, including authentication methods and registration requirements. Finally, you validated the self-service password reset process by successfully changing a user's password through the My Account page. This setup empowers users to manage their passwords securely and reduces the administrative overhead of password resets.
 
-#### You have successfully completed the lab. Click on Next >> to procced with next exercise.
+#### You have successfully completed the lab. Click on Next >> to proceed with the next lab.
    ![](../media/up4.png)
