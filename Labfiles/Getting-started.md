@@ -26,6 +26,10 @@ By completing this lab series, you will have comprehensive knowledge of designin
 
 - **Access Reviews** and **Role-Based Access Control (RBAC)** establish governance controls, enabling regular access validation and least-privilege permissions. **External Collaboration Settings** and **Guest User Management** facilitate secure partner and vendor access with configurable invitation and access restrictions. **Self-Service Password Reset (SSPR)** with password writeback ensures users can manage credentials securely while maintaining synchronization between cloud and on-premises environments.
 
+## Architecture Diagram
+
+![](../media/hybrid-identity-arch-diag-1303.png)
+
 ## Explanation of Components
 
 - **Microsoft Entra ID:** Microsoft Entra ID is a cloud-based identity and access management service that provides single sign-on (SSO), multi-factor authentication (MFA), and conditional access capabilities. It serves as the central identity provider for cloud and hybrid environments, enabling organizations to authenticate users, manage application access, and enforce security policies across the organization.
