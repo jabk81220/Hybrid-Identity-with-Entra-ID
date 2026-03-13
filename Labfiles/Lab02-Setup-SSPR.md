@@ -54,13 +54,8 @@ In this lab, you will perform the following:
 
     ![](../media/L2T2S12-0903.png)
 
-13. In the navigation pane, select **On-premises integration (1)**.
 
-14. Verify that your on-premises writeback client is running and Select the checkbox for **Write back passwords with Microsoft Entra Connect cloud sync (2)** and then click **Save (3)**.
-
-    ![](../media/L2T2S14-0903.png)
-
-15. Close Microsoft Edge.
+14. Close Microsoft Edge.
 
 ### Task 2: Validate self-service password reset
 
