@@ -1,4 +1,4 @@
-# Lab 05: Configure Access reviews and external collaboration setup
+# Lab 06: Configure Access reviews and external collaboration setup
 
 ### Estimated Duration: 60 Minutes
 
@@ -41,13 +41,12 @@ In this task, you will create a Microsoft 365 group named "All Users" in the Azu
    | Group type | **Microsoft 365 (1)** |
    | Group name | **All Users (2)** |
    | Group description | **Similar access group (3)** |
-   | Microsoft Entra roles can be assigned to the group | **Yes (4)** |
-   | Owners | Click on **no owners selected** and select **ODL_User <inject key="DeploymentID" enableCopy="false"/> (5)** from the list |
-   | Members | Click on **no members selected** and select **Allan**, **Joni**, **Mirinda**, **Edmund** and also include **ODL_User <inject key="DeploymentID" enableCopy="false"/> (6)** from the list |
+   | Owners | Click on **no owners selected** and select **ODL_User <inject key="DeploymentID" enableCopy="false"/> (4)** from the list |
+   | Members | Click on **no members selected** and select **Allan**, **Joni**, **Mirinda**, **Edmund** and also include **ODL_User <inject key="DeploymentID" enableCopy="false"/> (5)** from the list |
 
    ![](../media/L5E1T1S4-0903.png)
 
-1. Click on **Create (7)** and select **Yes**
+1. Click on **Create (6)** and select **Yes**
    
    > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps
    > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
@@ -72,7 +71,7 @@ In this task, you will configure an access review in Microsoft Entra ID to revie
 
    ![](../media/L5E1T2S3-0903.png)
 
-1. On **New access review** page, provide the below settings and Select **Next:Reviews (7)**.
+1. On **New access review** page, provide the below settings:
 
    - Select what to review: **Teams + Groups (1)**
 
@@ -84,11 +83,13 @@ In this task, you will configure an access review in Microsoft Entra ID to revie
 
    - Scope: **All users (6)**
 
+   - Select **Next:Reviews (7)**.
+
       ![](../media/L5E1T2S4.1-0903.png)
 
       ![](../media/L5E1T2S4.2-0903.png)
 
-1. On **Reviews** tab enter the following and click on select **Next: Settings (4)**
+1. On **Reviews** tab enter the following steps:
 
    - Select reviewers: **Select users or groups (1)**
 
@@ -96,15 +97,19 @@ In this task, you will configure an access review in Microsoft Entra ID to revie
 
    - Review recurrence: **Monthly (3)**
 
+   - Select **Next: Settings (4)**
+
       ![](../media/L5E1T2S5-0903.png)
 
-1. On the **Settings** tab enter the following and select **Next: Review + Create (4)**
+1. On the **Settings** tab enter the following steps:
 
    - Apply results to resource: **Check (1)**
 
    - If reviewers don't respond: **Take recommendations (2)**
 
    - At the end of review, send notifications to: **ODL_User <inject key="DeploymentID" enableCopy="false"/> (3)**
+
+   - Select **Next: Review + Create (4)**
 
       ![](../media/new1-5-4.png)
 
