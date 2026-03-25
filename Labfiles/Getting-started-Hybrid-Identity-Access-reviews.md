@@ -1,6 +1,6 @@
 # Getting Started with Hybrid Identity: Access Reviews & External Collaboration
  
-#### Overall Estimated Duration: 1 Hour
+#### Overall Estimated Duration: 1 Hour 30 Minutes
  
 ## Overview
  
