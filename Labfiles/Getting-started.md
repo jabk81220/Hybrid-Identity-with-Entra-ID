@@ -1,6 +1,6 @@
 # Getting Started with Hybrid Identity with Entra ID
 
-### Overall Estimated Duration: 1 Hour
+### Overall Estimated Duration: 2 Hours
 
 ## Overview
 
@@ -73,7 +73,7 @@ Feel free to start, stop, or restart your virtual machine as needed from the **R
 
 1. On the Sign in blade, you will see a login screen, in which enter the following email/username and password and then click on Sign in.
 
-    * Azure Username/Email:  <inject key="AzureAdUserEmail"></inject>
+    * **Azure Username/Email:**  <inject key="AzureAdUserEmail"></inject>
 
         ![](../media/signin1-0903.png)
 

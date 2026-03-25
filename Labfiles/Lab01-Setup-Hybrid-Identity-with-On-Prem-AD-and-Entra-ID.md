@@ -12,17 +12,19 @@ In this lab, you will perform the following:
 - Task 1: Active Directory Setup
 - Task 2: Adding users or groups in your Domain Controller
 - Task 3: Configure directory synchronization with Microsoft Entra Connect
-- Task 4: Verify synchronization in Microsoft Entra 
+- Task 4: Verify synchronization in Microsoft Entra
 
 ### Task 1: Active Directory Setup
 
 In this task, you will set up Active Directory Domain Services on a Windows Server. This involves launching Server Manager, adding roles and features, selecting Active Directory Domain Services, and promoting the server to a domain controller. By completing this task, you will establish the foundation for managing users, groups, and other objects within your domain.
 
-1. In the LabVM, press the Windows Logo Key and search for **Server Manager**. An application should show up on the list. Click on it to launch the program.
+1. In the LabVM, press the **Start Button (1)**, search for **Server Manager (2)**. Click on it to launch the program.
  
     ![](../media/lab1-1.png)
+
+    >**Note:** If you receive any pop-up **Try windows admin center and Azure arc today** click on **close** button. 
  
-1. Look for **Manage** on the top right of the menu bar. Click on it and then select **Add Roles and Features**. A pop-up window will open immediately. This pop-up window is the installer wizard that guides you with the roles and features setup.
+1. Look for **Manage (1)** on the top right of the menu bar. Click on it and then select **Add Roles and Features (2)**. A pop-up window will open immediately. This pop-up window is the installer wizard that guides you with the roles and features setup.
 
     ![](../media/lab1-2.png)
    
@@ -30,23 +32,27 @@ In this task, you will set up Active Directory Domain Services on a Windows Serv
 
     ![](../media/lab1-3.png)  
  
-1. At the **Installation Type** checkpoint select **Role-based or feature based installation** radio button and then click **Next**.
+1. On the **Installation Type** checkpoint, select **Role-based or feature based installation (1)** radio button and then click **Next (2)**.
 
    ![](../media/lab1-4.png)
    
-1. On the **Server Selection** checkpoint, select Select a **server from the server pool** radio button. This lists a server installed on your machine. Please, click on the desired server once to select it and click **Next**.
+1. On the **Server Selection** checkpoint, choose the **Select a server from the server pool (1)** radio button. This will display the list of servers available on your machine. Choose the desired server from the list, and click **Next (2)**.
 
    ![](../media/lab1-5.png)
    
-1. At the **Select Server Roles** checkpoint, select the role for the server. In the centre of the window, there is a list of all the roles that you can assign to your server machine. Search for **Active Directory Domain Services**.
+1. On the **Server Roles** checkpoint, you will see a list of roles available for installation in the center pane. From this list, locate and select **Active Directory Domain Services (1)**.
 
-   ![](../media/lab1-6.png)
+   ![](../media/lab1-6-part1.png)
    
-1. Next, a pop-up window will be displayed. This is the checkpoint for adding new features. Navigate on the **Add features** button at the bottom of the window and a list of available features will be displayed.
+1. Next, a pop-up window will be displayed. This is the checkpoint for adding new features. Navigate on the **Add features (1)** button at the bottom of the window and a list of available features will be displayed.
+
+   ![](../media/lab1-6-part2.png)
    
 1. Next simply click **next** without making modifications to any other settings.
 
    ![](../media/lab1-7.png) 
+
+   >**Note:** If the Features screen is not visible, first select Features from the left pane.
   
 1. You will be redirected to the adding **Active Directory Domain Services** feature once the previous step is complete. On the installer wizard window, click **Next**.
 
@@ -59,7 +65,7 @@ In this task, you will set up Active Directory Domain Services on a Windows Serv
 1. The wizard will then begin installation. The time of install depends on your machine’s hardware configuration and what features you’ve selected to be installed. Please make sure not to interrupt the installation. Once the installation is complete, click the **Close** button.
 
   
-1. On the **Server Manager** dashboard, you’ll should see a yellow triangle warning sign on the top right of the window near the menu bar. This sign appears only if Active Directory Domain Services was properly installed.
+1. On the **Server Manager** dashboard, you should see a yellow triangle warning sign on the top right of the window near the menu bar. This sign appears only if Active Directory Domain Services was properly installed.
 
    ![](../media/lab1-10.png)    
 
@@ -69,19 +75,21 @@ In this task, you will set up Active Directory Domain Services on a Windows Serv
 
    ![](../media/lab1-11.png)
  
-1. At the first checkpoint **Deployment Configuration**, please select the **add a new forest** radio button and enter your root domain name as **Contoso.local**. Then click **next**.
+1. At the first checkpoint **Deployment Configuration**, please select the **add a new forest (1)** radio button and enter your root domain name as **Contoso.local (2)**. Then click **next (3)**.
 
    ![](../media/lab1-12.png) 
 
-1. At the **Domain Controller Options** checkpoint, leave all the settings untouched and enter your password and confirm it. Make sure to keep a note of this password as changing it later on is troublesome.
+1. At the **Domain Controller Options** checkpoint, leave all the settings untouched and enter your **password and confirm password (2)**. Make sure to keep a note of this password as changing it later is troublesome. Click on **next (3)**. 
 
    ![](../media/lab1-13.png)
+
+   >**Note:** Make sure the password should meet all the requirements.
  
 1. On the **DNS Options** page, you’ll see an error message stating that there’s no parent zone found and no delegation for your DNS server could be created. Ignore this message and click the **next** button, leaving all the settings at this checkpoint unchanged.
 
    ![](../media/lab1-14.png)
 
-1. On the **Additional Options** page, enter **CONTOSO** as the NetBIOS domain name in the given textbox. Click **Next**.
+1. On the **Additional Options** page, enter **CONTOSO (1)** as the NetBIOS domain name in the given textbox. Click **Next (2)**.
 
    ![](../media/L1T1S18-0903.png)
 
@@ -102,7 +110,7 @@ In this task, you will set up Active Directory Domain Services on a Windows Serv
 ### Task 2: Adding users or groups in your Domain Controller
 In this task, you will add user accounts to the domain controller in Active Directory Users and Computers. You will create new user accounts with specified names, usernames, and passwords. By adding users to the domain controller, you will ensure that they have access to resources within the domain and can authenticate against Active Directory.
 
-1. In your LabVM, go to **Start > Windows Administrative Tools > Active Directory Users and Computers**.
+1. In your LabVM, go to **Start (1) > Windows Administrative Tools (2) > Active Directory Users and Computers (3)**.
 
 
    ![](../media/lab1-19.png)
@@ -163,7 +171,9 @@ In this task, you will configure directory synchronization between your on-premi
 
    ![](../media/L1T3S5-0903.png)
 
-1. Select **Open downloads folder** and then in the **Downloads** window, double-click **AzureADConnect.msi**.
+1. Select **Open downloads folder** and then in the **Downloads** window, double-click **AzureADConnect.msi**.  
+
+   ![](../media/open-downloads.png)
 
    >**Note:** If you receive an error while downloading the file that states Smart screen prevented the download, please click on the three dots next to the file in the downloads bar and select **Keep**. 
 
@@ -175,16 +185,18 @@ In this task, you will configure directory synchronization between your on-premi
 
    ![](../media/L1T3S8-0903.png)
 
-1. On the **Connect to Microsoft Entra ID** page, in the **USERNAME** box, enter **<inject key="AzureAdUserEmail"></inject> (1)** and then select **Next (2)**..
+1. On the **Connect to Microsoft Entra ID** page, in the **USERNAME** box, enter **<inject key="AzureAdUserEmail"></inject> (1)** and then select **Next (2)**.
 
    ![](../media/L1T3S9-0903.png)
 
 1. You will be navigated to a pop-up for signing in to Microsoft Account. 
 
-   - Enter UserName/Email: **<inject key="AzureAdUserEmail"></inject>**
+   - Enter UserName/Email: **<inject key="AzureAdUserEmail"></inject>** and click on **next**.
+
       ![](../media/signin1-0903.png)
 
-   - Enter Temporary Access Pass: **<inject key="AzureAdUserPassword"></inject>**
+   - Enter Temporary Access Pass: **<inject key="AzureAdUserPassword"></inject>** and click on **Sign in**.
+
       ![](../media/signin2-0903.png)
 
 1. On the **Connect to Azure AD DS** page, in the **USERNAME** and **PASSWORD** boxes, enter **CONTOSO\azureuser (1)**, and password as **<inject key="LabVM Admin Password"></inject> (2)**, and then select **Next (3)**.
