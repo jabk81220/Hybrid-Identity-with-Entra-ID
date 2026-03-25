@@ -4,7 +4,7 @@
 
 ## Overview
 
-This lab focuses on setting up the use of Microsoft Entra to assign Global Administrator roles to specified users with defined privileges and durations. Then, manage and update existing role assignments, transitioning them from eligible to active status as needed, with specified durations and justifications.
+This lab focuses on configuring Microsoft Entra to assign Global Administrator roles to specific users, including defined privileges and duration settings. Then, manage and update existing role assignments, transitioning them from eligible to active status as needed, with specified durations and justifications.
 
 ## Objectives
 
@@ -27,7 +27,7 @@ In this lab, you will perform the following:
 
     ![](../media/L3T1S2.1-0903.png)
 
-3. In the Privileged Identity Management page, in the left navigation, select **Micrososft Entra roles.**
+3. In the Privileged Identity Management page, in the left navigation, select **Microsoft Entra roles.**
 
     ![](../media/lab3-1.png)
 
@@ -43,7 +43,7 @@ In this lab, you will perform the following:
 
 7. Under **Select member(s),** select **No member selected (2)**.
 
-8. In the Select members pane, select the following users **(3)** and then chose **Select (4)**.
+8. In the Select members pane, select the following users **(3)** and then choose **Select (4)**.
     | Name           | 
       | -------------- | 
       | Edmund Reeve   | 
@@ -61,7 +61,7 @@ In this lab, you will perform the following:
 
    - **Active** assignments do not require the member to perform any action to use the role. Members assigned as active have the privileges always assigned to the role.
 
-11. **Uncheck (2)** the permanently eligible. Specify an assignment duration by changing the **start and end dates and times (3)**. 
+11. **Uncheck** the Permanently eligible option (2). Set an assignment duration by changing the **start/end dates and times (3)**. 
 
 12. When finished, select **Assign (4)**.
 
@@ -79,7 +79,7 @@ In this task, you will update and remove an existing Entra role assignment as ne
 
 4. On the **Eligible assignments (2)** tab, in the Action column, review the available options.
 
-6. Select **Remove (3)** to remove the user from eligible assignments.
+6. You can select **Remove (3)** to remove any specific user from eligible assignments.
 
     ![](../media/L3T2S4-0903.png)
 
@@ -87,9 +87,9 @@ In this task, you will update and remove an existing Entra role assignment as ne
 
     ![](../media/lab3-6.png)
 
-8. In order to make the eligible assignment to active for any user, select **Update** from Action list.
+8. On the same page, in order to make the eligible assignment active for any user, select **Update** from Action column.
 
-9. Provide the below details in **Membership settings** and click on **Save (5)**
+9. Provide the following details in **Membership settings** then click on **Save (5)**
 
      - Assignment type : **Active (1)**
      - Permanently eligible : Uncheck the box **(2)**

@@ -77,7 +77,7 @@ Feel free to start, stop, or restart your virtual machine as needed from the **R
 
         ![](../media/signin1-0903.png)
 
-    * **Temperory Access Pass**:  <inject key="AzureAdUserPassword"></inject>
+    * **Temporary Access Pass**:  <inject key="AzureAdUserPassword"></inject>
 
         **Note**: Refer to the **Environment** tab for any other lab credentials/details.
 
