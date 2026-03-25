@@ -57,9 +57,19 @@ In this task, you will create a Log Analytics workspace for to store the log inf
 
 ## Task 2 - Add Diagnostic setting to collect audit logs
 
-1. Once the workspace is created, click on **Go to resource** to navigate to the workspace.
+1. Once the workspace is created, Navigate to Microsoft Entra ID from the Azure portal.
 
-1. From the left navigation pane, select **Diagnostic settings (1)** under Monitoring section and click on **+ Add diagnistic setting (2)**.
+   Then continue:
+
+   - Click Diagnostic settings
+   - Click + Add diagnostic setting
+
+      Diagnostic setting name : Logsinfo
+
+   ![](../media/L4T2.png)
+
+
+1. From the left navigation pane, select **Diagnostic settings (1)** under Monitoring section and click on **+ Add diagnostic setting (2)**.
 
    ![](../media/L4T2S2-0903.png)
 
@@ -69,7 +79,7 @@ In this task, you will create a Log Analytics workspace for to store the log inf
 
    - Check the box for **audit (2)** and **allLogs (3)**.
 
-   - Under **Destination details**, select the **Send to Log analytics checkbox (4)** and make sure that log analytics workspace which is created earlier is selected.
+   - Under **Destination details**, select the **Send to Log analytics workspace checkbox (4)** and make sure that log analytics workspace which is created earlier is selected.
 
    - Click on **Save (5)**.
 
@@ -77,8 +87,15 @@ In this task, you will create a Log Analytics workspace for to store the log inf
 
 1. On **Destination details**, select the **Send to Log analytics checkbox** and make sure that log analytics workspace which is created earlier is selected.
 
-1. Click on **Save**.
-   >**Note**: Wait for about 15 mins for logs ingestion to happen and proceed with the next task.
+1. Click on **Save**. After configuring diagnostic settings, logs may not appear immediately because no activity has been generated yet.
+
+1. To generate logs, perform the following steps:
+
+   - Sign out from the Azure portal and sign in back to generate SigninLogs.
+   - Navigate to Microsoft Entra ID → Users → Edit your profile → Save to generate AuditLogs.
+   
+   >**Note:** Wait for 10–15 minutes for logs to be ingested into the Log Analytics workspace.
+   
 
 ### Task 3 - Verify the logs in the workspace
 
@@ -99,6 +116,7 @@ In this task, you will verify the logs collected in the Log Analytics workspace.
        SigninLogs
       ```
     ![](../media/lab4-6.png)
+
 
 ## Summary
 
