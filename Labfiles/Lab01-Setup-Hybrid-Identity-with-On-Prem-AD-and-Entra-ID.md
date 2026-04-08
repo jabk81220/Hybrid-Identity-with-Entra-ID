@@ -17,33 +17,31 @@ In this lab, you will perform the following:
 ### Task 1: Active Directory Setup
 In this task, you will set up Active Directory Domain Services on a Windows Server. This involves launching Server Manager, adding roles and features, selecting Active Directory Domain Services, and promoting the server to a domain controller. By completing this task, you will establish the foundation for managing users, groups, and other objects within your domain.
 
-1. In the LabVM, press the Windows Logo Key and search for **Server Manager**. An application should show up on the list. Click on it to launch the program.
+1. In the LabVM, click on **Start (1)** and search for **Server Manager (2)**. An application should show up on the list. Click on it to launch the program.
  
     ![](../media/lab1-1.png)
  
-1. Look for **Manage** on the top right of the menu bar. Click on it and then select **Add Roles and Features**. A pop-up window will open immediately. This pop-up window is the installer wizard that guides you through the roles and features setup.
+1. Look for **Manage (1)** on the top right of the menu bar. Click on it and then select **Add Roles and Features (2)**. A pop-up window will open immediately. This pop-up window is the installer wizard that guides you through the roles and features setup.
 
     ![](../media/lab1-2.png)
    
-1. On the left side of the window, you’ll see a list of all the checkpoints you encounter in this stage. Click **Next** to proceed.
+1. On the left side of the window, you will see a list of all the checkpoints you encounter in this stage. Click **Next** to proceed.
 
     ![](../media/lab1-3.png)  
  
-1. At the **Installation Type** checkpoint select **Role-based or feature based installation** radio button and then click **Next**.
+1. At the **Installation Type** checkpoint select **Role-based or feature based installation (1)** radio button and then click **Next (2)**.
 
    ![](../media/lab1-4.png)
    
-1. On the **Server Selection** checkpoint, select Select a **server from the server pool** radio button. This lists a server installed on your machine. Please, click on the desired server once to select it and click **Next**.
+1. On the **Server Selection** checkpoint, select a **server from the server pool (1)** radio button. This lists a server installed on your machine. Please, click on the desired server once to select it and click **Next (2)**.
 
    ![](../media/lab1-5.png)
    
-1. At the **Select Server Roles** checkpoint, select the role for the server. In the centre of the window, there is a list of all the roles that you can assign to your server machine. Search for **Active Directory Domain Services**.
+1. At the **Server Roles** checkpoint, in the centre of the window, there is a list of all the roles that you can assign to your server machine. Select **Active Directory Domain Services (1)**. A pop-up window will be displayed. This is the checkpoint for adding new features. Navigate on the **Add features (2)** button at the bottom of the window, and then click on **Next**.
 
    ![](../media/lab1-6.png)
    
-1. Next, a pop-up window will be displayed. This is the checkpoint for adding new features. Navigate on the **Add features** button at the bottom of the window, and a list of available features will be displayed.
-   
-1. Next, simply click **next** without making modifications to any other settings.
+1. In the **Features** checkpoint, simply click **Next** without making modifications to any other settings.
 
    ![](../media/lab1-7.png) 
   
@@ -51,11 +49,11 @@ In this task, you will set up Active Directory Domain Services on a Windows Serv
 
    ![](../media/lab1-8.png)
     
-1. You’ll see a summary of your selected options here. Have a look at them carefully, and if you think you’ve made a mistake at any of the earlier checkpoints, you can go back and fix it by clicking **< Previous**. Then, click the **Install** button once you’re satisfied with your selections at the “Confirmation” checkpoint.
+1. You will see a summary of your selected options here. Have a look at them carefully and if you think you’ve made a mistake at any of the earlier checkpoints, you can go back and fix it by clicking **< Previous**. Then, click the **Install** button once you’re satisfied with your selections at the **Confirmation** checkpoint.
 
    ![](../media/lab1-9.png) 
   
-1. The wizard will then begin installation. The time of installation depends on your machine’s hardware configuration and what features you’ve selected to be installed. Please make sure not to interrupt the installation. Once the installation is complete, click the **Close** button.
+1. The wizard will then begin installation. The time of installation depends on your machine’s hardware configuration and what features you’ve selected to be installed. Please make sure not to interrupt the installation. Once the installation is succeeded, click the **Close** button.
 
    >**Note:** The installation may take around 2-3 minutes to complete. 
   
@@ -78,7 +76,7 @@ In this task, you will set up Active Directory Domain Services on a Windows Serv
 
    ![](../media/lab1-13.png)
  
-1. On the **DNS Options** page, you’ll see an error message stating that there’s no parent zone found, and no delegation for your DNS server could be created. Ignore this message and click the **next** button, leaving all the settings at this checkpoint unchanged.
+1. On the **DNS Options** page, you will see an error message stating that there’s no parent zone found, and no delegation for your DNS server could be created. Ignore this message and click the **Next** button, leaving all the settings at this checkpoint unchanged.
 
    ![](../media/lab1-14.png)
 
@@ -86,7 +84,7 @@ In this task, you will set up Active Directory Domain Services on a Windows Serv
 
    ![](../media/L1T1S18-0903.png)
 
-1. Three or more paths will be listed on your screen. Do not change these paths. You’re not required to keep a note of these paths either. Click **next**.
+1. Three or more paths will be listed on your screen. Do not change these paths. You’re not required to keep a note of these paths either. Click **Next**.
 
    ![](../media/lab1-16.png)
 
@@ -100,6 +98,7 @@ In this task, you will set up Active Directory Domain Services on a Windows Serv
 
 1. Once the installation is completed, your LabVM will automatically restart. 
 
+   >**Note**: Wait for 2-3 minutes and then click on "Reconnect" to connect to the LabVM.
 
 ### Task 2: Adding users or groups in your Domain Controller
 
@@ -109,7 +108,7 @@ In this task, you will add user accounts to the domain controller in Active Dire
 
    ![](../media/lab1-19.png)
 
-1. In the Active Directory Users and Computers console, on the left pane, you will see a hierarchical structure of your domain. This structure represents the organization of your Active Directory environment. 
+1. In the **Active Directory Users and Computers** console, on the left pane, you will see a hierarchical structure of your domain. This structure represents the organization of your Active Directory environment. 
 
 1. Expand the folder that represents the **Contoso.local (1)** domain and expand the **Users (2)** folder. This is where you will create new user accounts for your domain. Click on the **New User (3)** option to create a new user account.
 
@@ -140,9 +139,7 @@ In this task, you will add user accounts to the domain controller in Active Dire
 
 In this task, you will configure directory synchronization between your on-premises Active Directory and Azure Active Directory using Microsoft Entra Connect. This involves downloading and installing Microsoft Entra Connect, providing necessary credentials for synchronization, and configuring synchronization options. By completing this task, you will enable the seamless synchronization of user identities between on-premises AD and Microsoft Entra.
 
-1. Open a new browser tab in your Lab VM.
-
-1. In the address bar, enter the URL below: 
+1. In your Lab VM, open the Microsoft Edge browser and navigate to the below link.
 
    ```
    https://entra.microsoft.com/#view/Microsoft_AAD_Connect_Provisioning/AADConnectMenuBlade/%7E/GetStarted
@@ -188,7 +185,7 @@ In this task, you will configure directory synchronization between your on-premi
    
       ![](../media/signin2-0903.png)
 
-1. On the **Connect to Azure AD DS** page, in the **USERNAME** and **PASSWORD** boxes, enter **CONTOSO\azureuser (1)**, and password as **<inject key="LabVM Admin Password"></inject> (2)**, and then select **Next (3)**.
+1. On the **Connect to AD DS** page, in the **USERNAME** box, enter **CONTOSO\azureuser (1)**, and password as **<inject key="LabVM Admin Password"></inject> (2)**, and then select **Next (3)**.
 
    ![](../media/lab1-28upd.png)
 
@@ -210,9 +207,7 @@ In this task, you will configure directory synchronization between your on-premi
 
 In this task, you will verify the synchronization of identities in Microsoft Entra. You will access the Microsoft 365 admin center, navigate to the Identity section, and verify that user accounts synchronized from on-premises AD are visible in Microsoft Entra. By confirming successful synchronization, you will ensure that users can access cloud-based resources using their on-premises credentials.
 
-1. Open a new browser tab in your Lab VM.
-
-1. In the address bar, enter the following URL:
+1. Open a new tab in **Microsoft Edge** browser in your LabVM, and navigate to Microsoft 365 Admin Center using the following URL:
 
    ```
    https://admin.microsoft.com
@@ -226,10 +221,10 @@ In this task, you will verify the synchronization of identities in Microsoft Ent
 
    ![](../media/L1T4S3-0903.png)
 
-1. On the Active users page, you should see the user accounts that you created in your on-premises Active Directory Domain Services (AD DS) environment. This confirms that synchronization between your on-premises AD and Microsoft Entra  was successful.
+1. On the **Active users** page, you should see the user accounts that you created in your on-premises Active Directory Domain Services (AD DS) environment. This confirms that synchronization between your on-premises AD and Microsoft Entra  was successful.
   
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps
-> - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+> - Scroll down in the lab guide and hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
 > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
 > - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
 

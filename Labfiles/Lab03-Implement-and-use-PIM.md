@@ -14,6 +14,8 @@ In this lab, you will perform the following:
 
 ### Task 1 - Assign Azure resource roles
 
+In this task, you will assign the Global Administrator role to the users from Microsft Entra portal. 
+
 1. Open a browser tab and sign in to Microsoft Entra Admin Center using your lab credentials. 
 
     ```

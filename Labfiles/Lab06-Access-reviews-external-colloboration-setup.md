@@ -87,7 +87,7 @@ In this task, you will configure an access review in Microsoft Entra ID to revie
 
 1. On **Reviews** tab enter the following and click on select **Next: Settings (4)**
 
-   - Select reviewers: **Select users or groups (1)**
+   - Select reviewers: **Selected user(s) or group(s) (1)**
    - Users or Groups: Click **+ Select Reviewers** and select **ODL_User <inject key="DeploymentID" enableCopy="false"/> (2)** from the list.
    - Review recurrence: **Monthly (3)**
 
@@ -95,9 +95,9 @@ In this task, you will configure an access review in Microsoft Entra ID to revie
 
 1. On the **Settings** tab enter the following and select **Next: Review + Create (4)**
 
-   - Apply results to resource: **Check (1)**
+   - Auto apply results to resource: **Check (1)**
    - If reviewers don't respond: **Take recommendations (2)**
-   - At the end of review, send notifications to: **ODL_User <inject key="DeploymentID" enableCopy="false"/> (3)**
+   - At the end of review, send notifications to: Click **+ Select User(s) or Group(s)** and select **ODL_User <inject key="DeploymentID" enableCopy="false"/> (3)**
 
       ![](../media/new1-5-4.png)
 
@@ -115,7 +115,7 @@ In this task, you will configure an access review in Microsoft Entra ID to revie
 
 In this task, you will review and manage user access to groups and applications through access reviews in the My Access portal. You will either manually assess and decide on user access or accept system-generated recommendations for managing permissions efficiently.
 
-1. Open a new incognito window in Microsoft Edge and navigate to My Access using the below URL: 
+1. Open a new InPrivate window in Microsoft Edge and navigate to My Access using the below URL: 
 
    ```
    https://myaccess.microsoft.com/
@@ -132,14 +132,14 @@ In this task, you will review and manage user access to groups and applications 
 
 1. After you open My Access under Groups and Apps, you can see:
 
-      * Name: The name of the access review.
-      * Due: The due date for the review. After this date, denied users could be removed from the group or app being reviewed.
-      * Resource: The name of the resource under review.
-      * Progress: The number of users reviewed over the total number of users part of this access review.
+      * **Name**: The name of the access review.
+      * **Due**: The due date for the review. After this date, denied users could be removed from the group or app being reviewed.
+      * **Resource**: The name of the resource under review.
+      * **Progress**: The number of users reviewed over the total number of users part of this access review.
 
 1. Select the name of the  access review that you created to get started.
 
-1. After it opens, you'll see the  of user in the scope for the access review.
+1. After it opens, you will see the users in the scope for the access review.
 
 1. There are two ways that you can approve or deny access:
 
@@ -184,7 +184,7 @@ In this task, you will review and manage user access to groups and applications 
 
 ### Task 1 - Enable Guest Users to perform self service sign-up
 
-In this task, you'll configure settings to allow guest users to sign up for access on their own in Microsoft Entra by enabling the self-service sign-up feature.
+In this task, you will configure settings to allow guest users to sign up for access on their own in Microsoft Entra by enabling the self-service sign-up feature.
 
 1. Open a browser tab to sign in to the Microsoft Entra Admin Center using the below URL:
 
@@ -199,17 +199,17 @@ In this task, you'll configure settings to allow guest users to sign up for acce
 
 1. Select **Users (1)** under **Entra ID**.
 
-1. Select **User Settings (1)** then scroll down and select **Manage external user collaboration settings (3)**.
+1. Select **User Settings (2)** then scroll down and select **Manage external user collaboration settings (3)**.
    
     ![](../media/L5E2T1S4-0903.png)
 
-1. Select **YES (1)** for the setting Enable guest self-service sign up via user flows and then click on **Save (2)** at the top of the screen.
+1. Select **Yes (1)** for the setting Enable guest self-service sign up via user flows and then click on **Save (2)** at the top of the screen.
 
     ![](../media/L5E2T1S5-0903.png)
 
 ### Task 2 - Configure external collaboration settings
 
-In this task, you'll configure external collaboration settings by enabling email one-time passcode notifications, setting guest user access levels, specifying who can invite guest users, and configuring collaboration restrictions.
+In this task, you will configure external collaboration settings by enabling email one-time passcode notifications, setting guest user access levels, specifying who can invite guest users, and configuring collaboration restrictions.
 
 1. From the left navigation pane, under **Entra ID** select **External Identities (1)**, and then select **All identity providers (2)**.
 
@@ -229,8 +229,7 @@ In this task, you'll configure external collaboration settings by enabling email
 
       - Guest users have the same access as members (most inclusive): This option gives guests the same access to Microsoft Entra resources and directory data as member users.
       - Guest users have limited access to properties and memberships of directory objects: (Default) This setting blocks guests from certain directory tasks, like enumerating users, groups, or other directory resources. Guests can see membership of all non-hidden groups.
-      - Guest user access is restricted to properties and memberships of their own directory objects (most restrictive): With this setting, guests can access only their own profiles. Guests are not allowed to see other users’ profiles, groups, or group memberships.
-Screen image displaying guest user access restriction options
+      - Guest user access is restricted to properties and memberships of their own directory objects (most restrictive): With this setting, guests can access only their own profiles. Guests are not allowed to see other users’ profiles, groups, or group memberships.Screen image displaying guest user access restriction options
 
         ![](../media/new1-5-9.png)
 
@@ -258,7 +257,7 @@ Screen image displaying guest user access restriction options
 
         ![](../media/new1-5-11.png)
 
-1. When finished, **save** your changes.
+1. When finished, **Save** your changes.
 
 ## Summary
 

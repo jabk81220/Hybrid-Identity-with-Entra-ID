@@ -4,7 +4,7 @@
 
 ## Overview
 
-In this lab, you will explore the complete Hybrid Identity experience with Entra ID. You'll work through hands-on labs designed to strengthen your organization's security posture by configuring passwordless authentication, access reviews, external collaboration, conditional access policies, monitoring, auditing, and Privileged Identity Management (PIM). You will also learn how to enable self-service password reset (SSPR) and seamlessly integrate on-premises Active Directory with Entra ID to implement a robust hybrid identity solution. 
+In this lab, you will explore the complete Hybrid Identity experience with Entra ID. You will work through hands-on labs designed to strengthen your organization's security posture by configuring passwordless authentication, access reviews, external collaboration, conditional access policies, monitoring, auditing, and Privileged Identity Management (PIM). You will also learn how to enable self-service password reset (SSPR) and seamlessly integrate on-premises Active Directory with Entra ID to implement a robust hybrid identity solution. 
 
 Through guided steps and practical scenarios, this lab will equip you with the skills needed to secure and manage identities across both on-premises and cloud environments.
 
@@ -44,7 +44,7 @@ By completing this lab series, you will have comprehensive knowledge of designin
 
 ## Accessing Your Lab Environment
 
-Once you're ready to dive in, your virtual machine and lab guide will be right at your fingertips within your web browser.
+Once you are ready to dive in, your virtual machine and lab guide will be right at your fingertips within your web browser.
 
 ![](../media/intropupd.png)
 
@@ -69,6 +69,12 @@ For convenience, you can open the lab guide in a separate window by selecting th
 Feel free to **Start, Stop, or Restart (2)** your virtual machine as needed from the **Resources (1)** tab. Your experience is in your hands!
 
 ![](../media/res-0903.png)
+
+## Lab Guide Zoom In/Zoom Out
+ 
+To adjust the zoom level for the environment page, click the **A↕ : 100%** icon located next to the timer in the lab environment.
+
+![](../media/zoomin.png)
 
 ## Let's Get Started with Azure Portal
 

@@ -17,13 +17,13 @@ In this lab, you will perform the following:
 
 In this task, you will configure password writeback using Microsoft Entra Connect.
 
-1. Select the **Azure AD Connect** application from the LabVM desktop
+1. Select the **Azure AD Connect (1)** application from the LabVM desktop
 
-3. On the **Welcome to Entra Connect Sync** page, select **Configure**.
+3. On the **Welcome to Entra Connect Sync** page, select **Configure (2)**.
 
    ![](../media/lab2-1upd.png)
 
-4. On the **Additional tasks** page, select **Customize synchronization options**, and then select **Next**.
+4. On the **Additional tasks** page, select **Customize synchronization options (1)**, and then select **Next (2)**.
 
    ![](../media/lab2-2upd.png)
 
@@ -39,7 +39,7 @@ In this task, you will configure password writeback using Microsoft Entra Connec
 
 7. On the **Domain and OU filtering** page, select **Next**.
 
-8. On the **Optional features** page, select **Password writeback**, and then select **Next**.
+8. On the **Optional features** page, select **Password writeback (1)**, and then select **Next (2)**.
 
     ![](../media/lab2-5upd.png)
 
@@ -61,6 +61,8 @@ In this task, you will configure password writeback using Microsoft Entra Connec
 
     ![](../media/L2T1S12-0903.png)
 
+     >**Note**: Wait for 2-3 minutes and then click on "Reconnect" to connect to the LabVM.
+
 13. To verify if the policy is updated, navigate to **Local security policy -> expand Security Settings -> Account Policies -> Password Policy**. The Minimum Password Age should be set to 0.
 
     ![](../media/lab2-9a.png)
@@ -79,13 +81,11 @@ In this task, you will enable self-service password reset for users in your tena
 
 2. If prompted, sign in as  **<inject key="AzureAdUserEmail"></inject>**, and use the Temporary Access Pass as **<inject key="AzureAdUserPassword"></inject>**, If the **Stay signed in?** prompt appears, select **No**.  
 
-3. In the Microsoft Entra admin center, navigate to the Search Resources section of the site.
-
-4. In the search box, type **password reset (1)**, and then select **Password reset (2)**.
+3. On the **Microsoft Entra admin center**, in the search box, type **password reset (1)**, and then select **Password reset (2)**.
 
     ![](../media/L2T2S4-0903.png)
 
-5. In the **Password reset | Properties** window, select **All** to enable self-service password reset to all users. Select **Save**.
+5. In the **Password reset | Properties** window, select **All (1)** to enable self-service password reset to all users. Select **Save (2)**.
 
     ![](../media/lab2-t2.png)
 
@@ -107,7 +107,7 @@ In this task, you will enable self-service password reset for users in your tena
 
 11. Select **Ok**. and click on **Save** to save the settings.
 
-12. Select **Registration (1)** Select **No (2)** for **Require users to register when signing in**, and the select **Save (3)**.
+12. Then select **Registration (1)** in the left pane, select **No (2)** for **Require users to register when signing in**, and the select **Save (3)**.
 
     ![](../media/L2T2S12-0903.png)
 
@@ -119,7 +119,9 @@ In this task, you will enable self-service password reset for users in your tena
 
 ### Task 3: Validate self-service password reset
 
-1. Open a new incognito window in Microsoft Edge and navigate to the My Account page using the following URL:
+In this task, you will validate self-service password reset by changing the password via the My Account page.
+
+1. Open a New InPrivate window in Microsoft Edge and navigate to the My Account page using the following URL:
 
     ```
     https://myaccount.microsoft.com/
@@ -133,21 +135,40 @@ In this task, you will enable self-service password reset for users in your tena
 
 1. On the **Enter password** page, enter **Pa55-w.rd!** or the password that you have entered and then select **Sign in**. 
 
+    > **Note**: If prompted with MFA, please follow the below steps or skip the steps and continue from step 13 if MFA is already enabled.
+
+1. At the **Let's keep your account secure** prompt, select **Next** thrice
+
+1. **Note:** If you don’t have the Microsoft Authenticator app installed on your mobile device:
+
+    - Open **Google Play Store** (Android) or **App Store** (iOS).
+    - Search for **Microsoft Authenticator** and tap **Install**.
+    - Open the **Microsoft Authenticator** app, select **Add account**, then choose **Work or school account**.
+
+1. A **QR code** will be displayed on your computer screen.
+
+1. In the Authenticator app, select **Scan a QR code** and scan the code displayed on your screen.
+
+1. After scanning, click **Next** to proceed.
+
+1. On your phone, enter the number shown on your computer screen in the Authenticator app and select **Next** and then click on **Done**,
+       
+1. If prompted to stay signed in, you can click **No**.
+
 1. On the **My Account** page, in the navigation pane, select **Change password**.
 
     ![](../media/L2T3S4-0903.png)
 
-1. On the **Change password** page, enter the following information and then select **Submit (4)**:
+1. On the **Change your password** page, enter the following information and then select **Submit (3)**:
 
-     - Old password: **Pa55-w.rd! (1)**
-     - Create new password: **Pa55w.rd!1234 (2)**
-     - Confirm new password: **Pa55w.rd!1234 (3)**
+     - New password: **Pa55w.rd!1234 (1)**
+     - Confirm new password: **Pa55w.rd!1234 (2)**
 
-        ![](../media/L2T3S5-0903.png)
+        ![](../media/L2T3S5-0903-1.png)
 
 1. On the Success, password changed window, click on **Done**.
 
-1. Once done, close the incognito window. 
+1. Once done, close the InPrivate window. 
 
 ## Summary
 

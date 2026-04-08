@@ -10,7 +10,7 @@ This lab focuses on setting up a  Log Analytics workspace in Azure to store and 
 In this lab, you will perform the following:
 
 - Task 1: Create Log Analytics Workspace
-- Task 2: Add Diagnostic setting to collect audit logs
+- Task 2: Add Diagnostic setting to collect audit and signin logs
 - Task 3: Verify the logs in the workspace
 
 ### Task 1 - Create Log Analytics Workspace
@@ -46,32 +46,58 @@ In this task, you will create a Log Analytics workspace to store the log informa
    ![](../media/lab4-2.png)
 
     > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps
-    > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+    > - Scroll down in the lab guide and hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
     > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
     > - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
 
     <validation step="abc96da1-739e-47e8-a627-b36299a4f02b" />
 
-### Task 2 - Add Diagnostic setting to collect audit logs
+### Task 2 - Add Diagnostic setting to collect audit and signin logs
 
-1. Once the workspace is created, click on **Go to resource** to navigate to the workspace.
+In this task, you will configure diagnostic settings on log analytics workspace to collect audit and sign-in logs.
 
-1. From the left navigation pane, select **Diagnostic settings (1)** under Monitoring section and click on **+ Add diagnistic setting (2)**.
+1. Once the workspace is created, Search for **Entra ID** and select on **Microsoft Entra ID**.
 
-   ![](../media/L4T2S2-0903.png)
+   ![](../media/L4T2S3-0903-1.png)
+
+1. From the left navigation pane, select **Diagnostic settings** under Monitoring section.
+
+   ![](../media/L4T2S3-0903-2.png)
+
+1. In the **Diagnostic settings | General** tab, click on **+ Add diagnistic setting**.
+
+   ![](../media/L4T2S3-0903-3.png)
 
 1. Enter the following details:
 
    - Diagnostic setting name : **Logsinfo (1)**
-   - Check the box for **audit (2)** and **allLogs (3)**.
-   - Under **Destination details**, select the **Send to Log analytics checkbox (4)** and make sure that the log analytics workspace that was created earlier is selected.
-   - Click on **Save (5)**.
+   - Check the box for **Auditlogs (2)** and **SignInLogs (3)**.
+   - Under **Destination details**, select the **Send to Log analytics checkbox (4)** and make sure that the log analytics workspace that was created earlier is selected **(5)**.
+   - Click on **Save (6)**.
 
-      ![](../media/L4T2S3-0903.png)
+      ![](../media/L4T2S3-0903-4.png)
 
-1. On **Destination details**, select the **Send to Log analytics checkbox** and make sure that the log analytics workspace that was created earlier is selected.
+1. Once it is saved, open a New InPrivate window in Microsoft Edge and navigate to the Azure portal page using the following URL:
 
-1. Click on **Save**.
+    ```
+    https://portal.azure.com/
+    ```
+
+1. On the **Sign in** blade, you will see a login screen, in which enter the following email/username and password and then click on **Sign in**.  
+
+   * **Azure Username/Email**:  <inject key="AzureAdUserEmail"></inject> 
+
+        ![](../media/signin1-0903.png) 
+
+   * **Temperory Access Pass**:  <inject key="AzureAdUserPassword"></inject>
+  
+        ![](../media/signin2-0903.png)
+  
+1. If you see the pop-up **Stay Signed in?** click **No**.
+
+    ![](../media/g3.jpg)
+
+1. Once it is logged into Azure portal successfully, close the InPrivate window.
 
    >**Note**: Wait for about 15 mins for logs ingestion to happen and proceed with the next task.
 
@@ -79,9 +105,11 @@ In this task, you will create a Log Analytics workspace to store the log informa
 
 In this task, you will verify the logs collected in the Log Analytics workspace.
 
-1. Navigate to the **Log analytics workspace** and Select **Logs** from the general section of the pane.
+1. In the Search bar of the Azure portal, type **Log Analytics workspace (1)**, then select **Log Analytics workspaces (2)**. Select the newly created workspace.
 
-1. Close all the pop-ups until the query pane is visible.
+   ![](../media/L4T1S2-0903.png)
+
+1. Select **Logs (1)** option in the left pane and close all the pop-ups until the query pane is visible.
 
 1. Select the mode as **KQL mode (2)**, and in the query pane, run the below queries, to view the activity data ingested into the workspace.
 
@@ -92,10 +120,10 @@ In this task, you will verify the logs collected in the Log Analytics workspace.
       ![](../media/L4T3S3-0903.png)
 
       ```
-       SigninLogs
+       SignInLogs
       ```
     
-      ![](../media/lab4-6upd.png)
+      ![](../media/lab4-6.png)
 
 ## Summary
 
