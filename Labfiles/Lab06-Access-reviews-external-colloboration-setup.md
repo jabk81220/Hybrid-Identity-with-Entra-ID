@@ -1,4 +1,4 @@
-# Lab 06: Configure Access reviews and external collaboration setup
+# Lab 05: Configure Access reviews and external collaboration setup
 
 ### Estimated Duration: 60 Minutes
 
